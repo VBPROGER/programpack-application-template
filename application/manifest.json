@@ -1,7 +1,7 @@
 {
     "name": "application_template",
     "description": "Your Description Here",
-    "author": "Your Name",
+    "author": "your_name",
     "version": "1.0.0",
     "mainfile": "App"
 }
