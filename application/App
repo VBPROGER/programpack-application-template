@@ -4,3 +4,4 @@ echo 'Checking resources'
 ls
 echo 'Directory name: ' "$(basename "$(PWD)")"
 cat content
+echo
