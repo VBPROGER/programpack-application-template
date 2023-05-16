@@ -14,3 +14,9 @@ sdeconvert:
 	$(PROGRAMPACK) deconvert 'app.zip' $(ARGS)
 shelp:
 	$(PROGRAMPACK) --help
+sdepsinstall:
+	git clone https://github.com/VBPROGER/programpack.git -b experimental && mv programpack programpack-exp-branch;
+	cd programpack-exp-branch;
+	make sinstall && make sclean;
+	cd ..;
+	true && rm -rf programpack-exp-branch;
