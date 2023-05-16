@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Write your code here
+echo 'Checking resources'
+ls
+echo 'Directory name: ' "$(basename "$(PWD)")"
+cat content
