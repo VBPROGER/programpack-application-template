@@ -21,7 +21,7 @@ jobs:
       run: make
 
     - name: Convert app
-      run: make sconvert ARGS="app.zip"
+      run: make sconvert ARGS="app.zip --virtual"
 
     - name: Run app
-      run: make srun ARGS="app.zip"
+      run: make srun ARGS="app.zip --virtual"
