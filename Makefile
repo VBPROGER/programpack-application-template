@@ -7,9 +7,9 @@ sbuild:
 	cd application; zip 'app.zip' -r .; mv app.zip ../app.zip
 	chmod 777 app.zip
 srun:
-	$(PROGRAMPACK) run $(ARGS)
+	$(PROGRAMPACK) run $(ARGS) --virtual
 sconvert:
-	$(PROGRAMPACK) convert 'app.zip' $(ARGS)
+	$(PROGRAMPACK) convert 'app.zip' $(ARGS) --virtual
 sdeconvert:
 	$(PROGRAMPACK) deconvert 'app.zip' $(ARGS)
 shelp:
